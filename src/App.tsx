@@ -1,4 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+import Index from './routes';
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -6,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100vh;
         padding: 0;
         margin: 0;
-        font-family: monospace, sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
     * {
         box-sizing: border-box;
@@ -16,20 +18,16 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-const Wrapper = styled.div`
-    background: #2d2e2f;
-    color: white;
-    height: 100vh;
-`;
-
 export const App = () => {
 
     return (
-        <Wrapper>
+        <>
             <GlobalStyle />
-            <div>
-                Hello World
-            </div>
-        </Wrapper>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Index/>}/>
+                </Routes>
+            </BrowserRouter>
+        </>
     )
 };
