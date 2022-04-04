@@ -11,6 +11,7 @@ export default function Index() {
     const [results, setResults] = useState([]);
 
     const search = (username: string) => {
+        if (loadingState === 1) return alert("Please wait, currently loading your results..");
         setLoadingState(1);
         axios.get('http://localhost:8080/' + username)
             .then(response => response.data)
