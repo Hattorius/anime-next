@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     padding-bottom: 3rem;
 
     display: flex;
-    min-height: 600px;
+    min-height: 700px;
     flex-direction: column;
 `;
 
