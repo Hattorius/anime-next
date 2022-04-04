@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         font-family: 'Open Sans', sans-serif;
+        background: #f47521;
+        overflow-x: hidden;
     }
     * {
         box-sizing: border-box;
