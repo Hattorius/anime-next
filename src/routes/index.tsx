@@ -13,7 +13,7 @@ export default function Index() {
     const search = (username: string) => {
         if (loadingState === 1) return alert("Please wait, currently loading your results..");
         setLoadingState(1);
-        axios.get('http://localhost:8080/' + username)
+        axios.get('https://api.animenext.io/' + username)
             .then(response => response.data)
             .then(data => {
                 setResults(data);
