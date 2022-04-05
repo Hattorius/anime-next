@@ -97,6 +97,7 @@ export default function UsernameSearch(props: {search: (username: string) => voi
     }
 
     useEffect(() => {
+        window.ttq.track('ClickButton');
         if (username.length >= 2 && username.length <= 16 && username.match(/^(\w|\d|_|-)+$/)) {
             setShowButton(true);
         } else {

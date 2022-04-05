@@ -14,7 +14,7 @@ export default function Index() {
         if (loadingState === 1) return alert("Please wait, currently loading your results..");
         setLoadingState(1);
         var api = 'https://api.animenext.io/';
-        if (window.location.hostname === 'localhost') api = 'http://localhost:8080';
+        if (window.location.hostname === 'localhost') api = 'http://localhost:8080/';
         axios.get(api + username)
             .then(response => response.data)
             .then(data => {

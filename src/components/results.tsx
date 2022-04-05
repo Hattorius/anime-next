@@ -98,6 +98,8 @@ export default function ResultsHolder(props: {
     useEffect(() => {
         if (typeof props.results[active] === 'undefined') {
             setExtraInfo({});
+        } else {
+            window.ttq.track('ViewContent');
         }
     }, [active]);
 
