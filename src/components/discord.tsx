@@ -35,7 +35,7 @@ const Text = styled.div`
 
 export default function Discord() {
     return (
-        <a href="https://discord.gg/FEBAjU8nKz" target="_blank">
+        <a href="https://discord.gg/FEBAjU8nKz" target="_blank" onClick={() => window.ttq.track('Contact')}>
             <Holder>
                 <Text>Join the Discord!</Text>
                 <Icon icon="cib:discord" color="white"/>
