@@ -123,7 +123,8 @@ export default function ResultsHolder(props: {
             <Wrapper ref={loadingRef}>
                 {props.loadingState == 1 && <LoaderHolder>
                     <img src={loader} style={{width: '128px'}}/><br />
-                    searching for animes
+                    searching for animes<br />
+                    <small>(This can take up to 10 seconds, please have patience)</small>
                 </LoaderHolder>}
                 {props.loadingState == 2 && 
                     <>

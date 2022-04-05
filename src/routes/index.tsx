@@ -7,7 +7,7 @@ import Discord from "../components/discord";
 
 
 export default function Index() {
-    const [loadingState, setLoadingState] = useState(0);
+    const [loadingState, setLoadingState] = useState(1);
     const [results, setResults] = useState([]);
 
     const search = (username: string) => {
