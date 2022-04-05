@@ -124,7 +124,7 @@ export default function ResultsHolder(props: {
                 {props.loadingState == 1 && <LoaderHolder>
                     <img src={loader} style={{width: '128px'}}/><br />
                     searching for animes<br />
-                    <small>(This can take up to 10 seconds, please have patience)</small>
+                    <small>(This can take up to 30 seconds, please have patience)</small>
                 </LoaderHolder>}
                 {props.loadingState == 2 && 
                     <>
