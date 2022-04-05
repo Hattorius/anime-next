@@ -3,6 +3,7 @@ import Jumbo from "../components/jumbo";
 import Results from '../components/results';
 import { useState } from 'react';
 import axios from "axios";
+import Discord from "../components/discord";
 
 
 export default function Index() {
@@ -25,6 +26,7 @@ export default function Index() {
             <Header/>
             <Jumbo search={search}/>
             <Results loadingState={loadingState} results={results}/>
+            <Discord/>
         </>
     );
 }
