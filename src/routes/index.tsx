@@ -1,5 +1,4 @@
 import Header from "../components/header";
-import Info from "../components/info";
 import Jumbo from "../components/jumbo";
 import Results from '../components/results';
 import { useState } from 'react';
