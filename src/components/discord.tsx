@@ -7,7 +7,6 @@ const Holder = styled.div`
     right: 5px;
     bottom: 5px;
     border-radius: 5px;
-    background: #5865F2;
     font-size: 60px;
     text-align: center;
     height: 64px;
@@ -15,10 +14,6 @@ const Holder = styled.div`
     align-items: center;
     cursor: pointer;
     transition: 150ms;
-
-    &:hover {
-        background: #4955da;
-    }
 `;
 
 const Text = styled.div`
