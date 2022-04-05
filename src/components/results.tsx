@@ -140,7 +140,7 @@ export default function ResultsHolder(props: {
                                 }}/>)}
                             </Resultinner>
                         </ResultHolder>
-                        {typeof extraInfo.url === 'string' && <AnimeInfo info={extraInfo}/>}
+                        {typeof extraInfo.url === 'string' && props.results.length > 0 && <AnimeInfo info={extraInfo}/>}
                     </>
                 }
             </Wrapper>
