@@ -19,7 +19,7 @@
         "typescript": "^4.5.2"
     },
     "scripts": {
-        "start": "cp assets/favicon.ico dist && parcel src/index.html",
-        "build": "cp assets/favicon.ico dist && parcel build src/index.html"
+        "start": "\\cp assets/favicon.ico dist && parcel src/index.html",
+        "build": "\\cp assets/favicon.ico dist && parcel build src/index.html"
     }
 }
