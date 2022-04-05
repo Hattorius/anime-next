@@ -131,6 +131,7 @@ export default function ResultsHolder(props: {
                 {props.loadingState == 2 && 
                     <>
                         <Title>Results</Title>
+                        {props.results.length === 0 && <p>No results shown, your username does not exist or we had no permission to see your list.</p>}
                         <ResultHolder>
                             <Resultinner>
                                 {props.results.map((anime, id) => <Anime id={id} anime={anime} key={id} active={id == active} onClick={(clicked: number) => {
