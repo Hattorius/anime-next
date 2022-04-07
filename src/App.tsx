@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
-import Index from './routes';
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -9,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         font-family: 'Open Sans', sans-serif;
-        background: #f47521;
+        background: #121212;
         overflow-x: hidden;
     }
     * {
@@ -27,7 +26,6 @@ export const App = () => {
             <GlobalStyle />
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Index/>}/>
                 </Routes>
             </BrowserRouter>
         </>
