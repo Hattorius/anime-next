@@ -28,6 +28,7 @@ export const App = () => {
                 <Routes>
                 </Routes>
             </BrowserRouter>
+            Hello world!
         </>
     )
 };
