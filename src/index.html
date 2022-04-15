@@ -22,12 +22,16 @@
     <meta property="og:title" content="AnimeNext - What anime to watch next?" />
     <meta property="og:description" content="Find new anime series to watch based on your MyAnimeList profile!" />
 
+    <link rel="preload" href="../assets/automatic-webfont.otf" as="font">
+    <link rel="preload" href="../assets/automatic-webfont.woff" as="font">
+    <link rel="preload" href="../assets/automatic-webfont.woff2" as="font">
+    <link rel="preload" href="./index.tsx" as="script">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGNMMY1WZ5"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGNMMY1WZ5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -64,11 +68,18 @@
             ttq.load('C9652NRC77U7KEOR3VVG');
             ttq.page();
         }(window, document, 'ttq');
-    </script>
+    </script> -->
+
+    <style>
+        @font-face {
+            font-family: "Automatic";
+            src: url("../assets/automatic-webfont.woff") format("woff"), url("../assets/automatic-webfont.otf") format("opentype");
+        }
+    </style>
 </head>
 
 <body>
-    <div id="root" />
+    <div id="root"></div>
     <script src="./index.tsx" type="module"></script>
 </body>
 
